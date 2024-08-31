@@ -1,0 +1,236 @@
+.delete-button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1;
+}
+
+.delete-button:hover {
+  background-color: #cc0000;
+  transform: scale(1.1);
+}
+
+.delete-button:active {
+  transform: scale(0.95);
+}
+
+.body-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #141524;
+  width: 100vw;
+  padding-top: 5em;
+  color: #fff;
+}
+
+#basket-button,
+#main-button {
+  line-height: 35px;
+  margin: 0 15px 0 15px;
+  padding: 0 15px 0 15px;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#ff2e4e, #e284ff);
+}
+
+#basket-button:hover,
+#main-button:hover {
+  background-image: linear-gradient(#ff0026, #c300ff);
+}
+
+.header-reviews {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.header-section-left {
+  display: flex;
+  align-items: center;
+  margin-left: 2em;
+}
+
+.text-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 24px;
+}
+
+.film-poster {
+  height: 100vh;
+  text-align: center;
+}
+
+.back-poster {
+  height: 100%;
+  width: 100%;
+}
+
+.content-part {
+  background-color: #1b1b1b;
+}
+
+.border-description {
+  color: #fff;
+  border: 40px solid #161616;
+  padding: 50px;
+  font-size: 18px;
+}
+
+#table-review {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+}
+
+.body-review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #141524;
+  width: 100vw;
+}
+
+.write-review {
+  background-color: #969696;
+  margin-top: 2em;
+  height: 100px;
+  width: 500px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fffc5e;
+}
+
+.write-review::placeholder {
+  color: #ffffff;
+}
+
+#section-list {
+  width: 100%;
+}
+
+#basket-button {
+  line-height: 35px;
+  margin: 0 15px 0 15px;
+  padding: 0 15px 0 15px;
+  color: #fff;
+  border-radius: 5px;
+  background-image: linear-gradient(#ff2e4e, #e284ff);
+}
+
+#write-button {
+  margin-top: 1em;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#write-button:hover {
+  background-color: #d63600;
+}
+
+.add-movie-basket {
+  line-height: 35px;
+  margin: 0 15px 0 15px;
+  padding: 0 15px 0 15px;
+  background-color: #e50914;
+  color: #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-movie-basket:hover {
+  transform: scale(1.1);
+}
+
+.add-movie-basket:active {
+  transform: scale(0.95);
+  background-color: #168925;
+}
+
+.title-reviews {
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #ffff00;
+  margin: 40px 0 10px;
+  text-transform: uppercase;
+}
+
+.no-reviews-message {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #9f9cb2;
+  text-align: center;
+  background-color: #2d2d4c;
+  padding: 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.edit-button,
+.save-button,
+.cancel-button,
+.delete-review-button {
+  background-color: #6b6b6b;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 5px;
+}
+
+.edit-button:hover,
+.save-button:hover,
+.cancel-button:hover,
+.delete-review-button:hover {
+  background-color: #969696;
+}
+
+.edit-button:active,
+.save-button:active,
+.cancel-button:active,
+.delete-review-button:active {
+  transform: scale(0.95);
+}
+
+#edit-review-text {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 10px;
+}

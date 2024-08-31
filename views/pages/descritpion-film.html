@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/home.css" />
+    <link rel="stylesheet" href="../styles/user.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>CineRate</title>
+  </head>
+
+  <body>
+    <div class="content-part">
+      <div class="header-reviews">
+        <div class="header-section-left">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/views/pages/user.html">
+              <img src="../images/icon-popcorn.png" class="logo-image" />
+              CineRate
+            </a>
+          </div>
+        </div>
+
+        <div class="header-section-right">
+          <button class="add-movie-basket" type="button" id="add-movie-basket">
+            ДОБАВИТЬ В ИЗБРАННОЕ
+          </button>
+          <button class="selected-films" type="button" id="basket-button">
+            ИЗБРАННОЕ
+          </button>
+          <a href="index.html" class="auth-link" aria-disabled="false">ВЫЙТИ</a>
+        </div>
+      </div>
+
+      <div class="body">
+        <div id="section-description"></div>
+        <div class="border-description">
+          <div id="description"></div>
+          <button class="registration" type="button" id="review-button">
+            ОТЗЫВЫ
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../scripts/list.js"></script>
+  <script src="../scripts/description-film.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const basketButton = document.getElementById("basket-button");
+      basketButton.addEventListener("click", function () {
+        window.location.href = "/views/pages/list.html";
+      });
+
+      const addToBasketButton = document.getElementById("add-movie-basket");
+      addToBasketButton.addEventListener("click", async function () {
+        const url = new URL(location.href);
+        const movieId = url.searchParams.get("id");
+
+        try {
+          await addItemToList(movieId);
+        } catch (error) {
+          console.error("Произошла ошибка:", error.message);
+        }
+      });
+    });
+  </script>
+</html>

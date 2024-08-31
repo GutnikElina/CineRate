@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>CineRate</title>
+  </head>
+  <body id="Body">
+    <div class="main-page">
+      <div class="backgound-image">
+        <img
+          src="/views/images/poster-admin.jpg"
+          alt="CineRate"
+          id="image-movies"
+        />
+      </div>
+
+      <div class="main-content">
+        <div class="content">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/views/pages/authorization.html">
+              <img src="../images/icon-popcorn.png" class="logo" />
+            </a>
+            <button onclick="logout()" class="logout-button">Выйти</button>
+          </div>
+          <div class="body">
+            <h1 class="admin-title">CineRate - ADMINISTRATION</h1>
+            <div class="table-container">
+              <table class="table" id="admin-table">
+                <tr class="management-row">
+                  <td onclick="showUsers()">Управление пользователями</td>
+                </tr>
+                <tr class="management-row">
+                  <td onclick="showReviews()">Управление отзывами</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../scripts/admin.js"></script>
+  </body>
+</html>

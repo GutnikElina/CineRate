@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/views/styles/home.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>CineRate</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="header">
+        <div class="header-section-left">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="/views/pages/index.html">
+              <img src="../images/icon-popcorn.png" class="logo-image" />
+              CineRate
+            </a>
+          </div>
+        </div>
+
+        <div class="header-section-center">
+          <form role="search" id="form-search">
+            <input
+              type="search"
+              id="query"
+              name="query"
+              placeholder="Search film..."
+            />
+          </form>
+        </div>
+
+        <div class="header-section-right">
+          <div class="text-header">
+            ФИЛЬМЫ&nbsp;И&nbsp;СЕРИАЛЫ&nbsp;БЕЗ&nbsp;ОГРАНИЧЕНИЙ
+          </div>
+          <button class="registration" type="button" id="join-button">
+            ПРИСОЕДИНЯЙТЕСЬ
+          </button>
+          <a href="authorization.html" class="auth-link" aria-disabled="false"
+            >ВОЙТИ</a
+          >
+        </div>
+      </div>
+
+      <div class="body" id="main-part">
+        <section id="section-recommendations">
+          <div class="title-recommendations">Лучший выбор</div>
+          <div class="rows">
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00007"
+                title="Джентельмены"
+              >
+                <img
+                  src="../images/jentlemen.jpg"
+                  class="img-cards"
+                  alt="Джентельмены"
+                />
+                <h3 id="film-name">Джентельмены</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00008"
+                title="Сёгун"
+              >
+                <img src="../images/sogun.jpg" class="img-cards" alt="Сёгун" />
+                <h3 id="film-name">Сёгун</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00009"
+                title="Дом дракона"
+              >
+                <img
+                  src="../images/dragon-house.webp"
+                  class="img-cards"
+                  alt="Дом дракона"
+                />
+                <h3 id="film-name">Дом дракона</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00010"
+                title="Задача трех тел"
+              >
+                <img
+                  src="../images/3-body-problem.jpg"
+                  class="img-cards"
+                  alt="Задача трех тел"
+                />
+                <h3 id="film-name">Задача трех тел</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00011"
+                title="Дева и дракон"
+              >
+                <img
+                  src="../images/damsel.jpg"
+                  class="img-cards"
+                  alt="Дева и дракон"
+                />
+                <h3 id="film-name">Дева и дракон</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00012"
+                title="Созвездие"
+              >
+                <img
+                  src="../images/sozvezdie.jpg"
+                  class="img-cards"
+                  alt="Созвездие"
+                />
+                <h3 id="film-name">Созвездие</h3>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-recommendations">
+          <div class="title-recommendations">Рекомендации</div>
+          <div class="rows">
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00001"
+                title="Как приручить дракона 3"
+              >
+                <img
+                  src="../images/how_to_train_your_dragon.jpg"
+                  class="img-cards"
+                  alt="Как приручить дракона 3"
+                />
+                <h3 id="film-name">Как приручить дракона 3</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00002"
+                title="Интерстеллар"
+              >
+                <img
+                  src="../images/interstellar.jpg"
+                  class="img-cards"
+                  alt="Интерстеллар"
+                />
+                <h3 id="film-name">Интерстеллар</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00003"
+                title="Дюна 2"
+              >
+                <img src="../images/dune.jpg" class="img-cards" alt="Дюна 2" />
+                <h3 id="film-name">Дюна 2</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00004"
+                title="Аватар: Путь воды"
+              >
+                <img
+                  src="../images/avatar.jpg"
+                  class="img-cards"
+                  alt="Аватар: Путь воды"
+                />
+                <h3 id="film-name">Аватар: Путь воды</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00005"
+                title="Гордость и предубеждение"
+              >
+                <img
+                  src="../images/pride_and_prejudice.jpg"
+                  class="img-cards"
+                  alt="Гордость и предубеждение"
+                />
+                <h3 id="film-name">Гордость и предубеждение</h3>
+              </button>
+            </div>
+            <div class="column">
+              <button
+                class="cards-guest"
+                type="button"
+                data-id="00006"
+                title="Гарри Поттер и Дары Смерти: Часть 2"
+              >
+                <img
+                  src="../images/harry potter.jpg"
+                  class="img-cards"
+                  alt="Гарри Поттер и Дары Смерти: Часть 2"
+                />
+                <h3 id="film-name">Гарри Поттер и Дары Смерти: Часть 2</h3>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <p>&copy; 2024 CineRate. All rights reserved.</p>
+          <p>Created by Gutnik Elina</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="../scripts/searchFilmGuest.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".cards-guest").forEach((button) => {
+        button.addEventListener("click", () => {
+          window.location.href = "/views/pages/not-authorized.html";
+        });
+      });
+
+      document.getElementById("join-button").addEventListener("click", () => {
+        window.location.href = "registration.html";
+      });
+    });
+  </script>
+</html>
